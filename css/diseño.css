@@ -1,0 +1,93 @@
+/* 1. Estilos generales de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y limpia */
+    background-color: #f0f4f8; /* Un fondo gris/azulado muy suave para que los divs resalten */
+    color: #333333; /* Color de texto oscuro para facilitar la lectura */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra todo horizontalmente */
+    padding: 30px;
+    margin: 0;
+}
+
+/* 2. Estilo del título principal */
+h1 {
+    color: #2c3e50; /* Azul oscuro elegante */
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Separación de letras para un toque más profesional */
+}
+
+/* 3. Estilos de los contenedores (Diseño tipo Tarjeta) */
+.div1, .div2, .div3 {
+    background-color: #ffffff; /* Fondo blanco para crear contraste con el fondo de la página */
+    width: 100%;
+    max-width: 600px; /* Evita que los contenedores sean demasiado anchos en PC */
+    padding: 25px 35px; /* Espacio interior para que el contenido respire */
+    margin-bottom: 25px; /* Separación entre cada tarjeta */
+    border-radius: 12px; /* Bordes redondeados modernos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra sutil para dar efecto de elevación */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+/* 4. Efecto interactivo al pasar el mouse sobre los contenedores */
+.div1:hover, .div2:hover, .div3:hover {
+    transform: translateY(-5px); /* Levanta la tarjeta ligeramente hacia arriba */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Hace la sombra más pronunciada */
+}
+
+/* 5. Estilo de los subtítulos de cada contenedor */
+h5 {
+    color: #3498db; /* Azul brillante y llamativo */
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1; /* Línea separadora sutil debajo del título */
+    padding-bottom: 8px;
+}
+
+/* 6. Estilo de los textos (párrafos) */
+p {
+    line-height: 1.6; /* Espaciado entre líneas para una lectura más cómoda */
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* 7. Estilo del campo de texto (Input) */
+input[type="text"] {
+    width: 100%; /* Hace que el input ocupe todo el ancho disponible */
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #dcdcdc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados en el input */
+    font-size: 1rem;
+    box-sizing: border-box; /* Asegura que el padding no rompa el tamaño total */
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto al hacer clic para escribir en el input */
+input[type="text"]:focus {
+    border-color: #3498db; /* El borde se vuelve azul al seleccionarlo */
+    outline: none; /* Quita el borde negro que ponen los navegadores por defecto */
+}
+
+/* 8. Estilo del Botón de Enviar */
+button {
+    background-color: #2ecc71; /* Verde vibrante y positivo */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 12px 25px; /* Tamaño del botón */
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer; /* Cambia el mouse a una "manita" al pasar por encima */
+    margin-top: 15px;
+    width: 100%; /* Botón de ancho completo */
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+button:hover {
+    background-color: #27ae60; /* Un verde un poco más oscuro para dar retroalimentación */
+}
