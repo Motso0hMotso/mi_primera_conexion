@@ -1,3 +1,6 @@
+<?php
+include 'conexion.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -27,12 +30,13 @@
     </div>
     <div class="div3">
         <h5>CONTENEDOR DIV 3</h5>
-                <p>Aprnderé a utilizar formularios.
+                <p>Aprenderé a utilizar formularios.
             <br>
-            ste es un button. 
+            Este es un button. 
             <br>
             <button type="submit" name="Enviar">Enviar</button>
                 </p>
     </div>
+    <p>Haz click aquí para <a href="producto.php"> Ir a la gestión de productos</a>.</p>
     </body>
 </html>
